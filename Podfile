@@ -3,5 +3,5 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'ReplicateFlicks' do
-    pod 'Alamofire', '~> 4.3'
+    pod 'AFNetworking'
 end

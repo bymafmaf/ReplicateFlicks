@@ -12,7 +12,6 @@
 		D2E4C04B1E4143D60073D05A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E4C04A1E4143D60073D05A /* Assets.xcassets */; };
 		D2E4C04E1E4143D60073D05A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E4C04C1E4143D60073D05A /* LaunchScreen.storyboard */; };
 		D2E4C0561E41449A0073D05A /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C0551E41449A0073D05A /* MoviesViewController.swift */; };
-		D2E4C0581E4146EB0073D05A /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C0571E4146EB0073D05A /* NetworkController.swift */; };
 		D2E4C05B1E414BB00073D05A /* MovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C05A1E414BB00073D05A /* MovieCellView.swift */; };
 		DFE13D003186EABC8F72CF03 /* Pods_ReplicateFlicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29316AD34068C775203168D /* Pods_ReplicateFlicks.framework */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		D2E4C04D1E4143D60073D05A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2E4C04F1E4143D60073D05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E4C0551E41449A0073D05A /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
-		D2E4C0571E4146EB0073D05A /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		D2E4C05A1E414BB00073D05A /* MovieCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCellView.swift; sourceTree = "<group>"; };
 		DC4ABC71D16265CB86662CAE /* Pods-ReplicateFlicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplicateFlicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReplicateFlicks/Pods-ReplicateFlicks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +83,6 @@
 				D2E4C05C1E414C120073D05A /* Controllers */,
 				D2E4C0591E414B860073D05A /* Views */,
 				D2E4C0431E4143D60073D05A /* AppDelegate.swift */,
-				D2E4C0571E4146EB0073D05A /* NetworkController.swift */,
 				D2E4C0471E4143D60073D05A /* Main.storyboard */,
 				D2E4C04A1E4143D60073D05A /* Assets.xcassets */,
 				D2E4C04C1E4143D60073D05A /* LaunchScreen.storyboard */,
@@ -236,7 +233,6 @@
 				D2E4C0441E4143D60073D05A /* AppDelegate.swift in Sources */,
 				D2E4C05B1E414BB00073D05A /* MovieCellView.swift in Sources */,
 				D2E4C0561E41449A0073D05A /* MoviesViewController.swift in Sources */,
-				D2E4C0581E4146EB0073D05A /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

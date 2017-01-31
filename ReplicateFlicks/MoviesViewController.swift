@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AFNetworking
 
 class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var movieTableView: UITableView!
+    
+    let baseUrl: String = ""
     
     var movies: [NSDictionary]?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
