@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D2E4C0441E4143D60073D05A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C0431E4143D60073D05A /* AppDelegate.swift */; };
-		D2E4C0461E4143D60073D05A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C0451E4143D60073D05A /* ViewController.swift */; };
 		D2E4C0491E4143D60073D05A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E4C0471E4143D60073D05A /* Main.storyboard */; };
 		D2E4C04B1E4143D60073D05A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E4C04A1E4143D60073D05A /* Assets.xcassets */; };
 		D2E4C04E1E4143D60073D05A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E4C04C1E4143D60073D05A /* LaunchScreen.storyboard */; };
+		D2E4C0561E41449A0073D05A /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C0551E41449A0073D05A /* MoviesViewController.swift */; };
+		D2E4C0581E4146EB0073D05A /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C0571E4146EB0073D05A /* NetworkController.swift */; };
+		D2E4C05B1E414BB00073D05A /* MovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C05A1E414BB00073D05A /* MovieCellView.swift */; };
+		DFE13D003186EABC8F72CF03 /* Pods_ReplicateFlicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29316AD34068C775203168D /* Pods_ReplicateFlicks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1386AED96BE7442869E24DB /* Pods-ReplicateFlicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplicateFlicks.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReplicateFlicks/Pods-ReplicateFlicks.release.xcconfig"; sourceTree = "<group>"; };
+		B29316AD34068C775203168D /* Pods_ReplicateFlicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReplicateFlicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E4C0401E4143D60073D05A /* ReplicateFlicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplicateFlicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E4C0431E4143D60073D05A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2E4C0451E4143D60073D05A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2E4C0481E4143D60073D05A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2E4C04A1E4143D60073D05A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2E4C04D1E4143D60073D05A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2E4C04F1E4143D60073D05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E4C0551E41449A0073D05A /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		D2E4C0571E4146EB0073D05A /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		D2E4C05A1E414BB00073D05A /* MovieCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCellView.swift; sourceTree = "<group>"; };
+		DC4ABC71D16265CB86662CAE /* Pods-ReplicateFlicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplicateFlicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReplicateFlicks/Pods-ReplicateFlicks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE13D003186EABC8F72CF03 /* Pods_ReplicateFlicks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B7FC25FC7AE41557D307EBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B29316AD34068C775203168D /* Pods_ReplicateFlicks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD295A4C29AA4F6F7B8FFC86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC4ABC71D16265CB86662CAE /* Pods-ReplicateFlicks.debug.xcconfig */,
+				B1386AED96BE7442869E24DB /* Pods-ReplicateFlicks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D2E4C0371E4143D60073D05A = {
 			isa = PBXGroup;
 			children = (
 				D2E4C0421E4143D60073D05A /* ReplicateFlicks */,
 				D2E4C0411E4143D60073D05A /* Products */,
+				BD295A4C29AA4F6F7B8FFC86 /* Pods */,
+				2B7FC25FC7AE41557D307EBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,32 @@
 		D2E4C0421E4143D60073D05A /* ReplicateFlicks */ = {
 			isa = PBXGroup;
 			children = (
+				D2E4C05C1E414C120073D05A /* Controllers */,
+				D2E4C0591E414B860073D05A /* Views */,
 				D2E4C0431E4143D60073D05A /* AppDelegate.swift */,
-				D2E4C0451E4143D60073D05A /* ViewController.swift */,
+				D2E4C0571E4146EB0073D05A /* NetworkController.swift */,
 				D2E4C0471E4143D60073D05A /* Main.storyboard */,
 				D2E4C04A1E4143D60073D05A /* Assets.xcassets */,
 				D2E4C04C1E4143D60073D05A /* LaunchScreen.storyboard */,
 				D2E4C04F1E4143D60073D05A /* Info.plist */,
 			);
 			path = ReplicateFlicks;
+			sourceTree = "<group>";
+		};
+		D2E4C0591E414B860073D05A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2E4C05A1E414BB00073D05A /* MovieCellView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D2E4C05C1E414C120073D05A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2E4C0551E41449A0073D05A /* MoviesViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2E4C0521E4143D60073D05A /* Build configuration list for PBXNativeTarget "ReplicateFlicks" */;
 			buildPhases = (
+				AFBE3C65D4A52FE7BACFCFB9 /* [CP] Check Pods Manifest.lock */,
 				D2E4C03C1E4143D60073D05A /* Sources */,
 				D2E4C03D1E4143D60073D05A /* Frameworks */,
 				D2E4C03E1E4143D60073D05A /* Resources */,
+				0C422A94F82F237D561ED560 /* [CP] Embed Pods Frameworks */,
+				A4E3446E9685AA9FD0334571 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +180,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C422A94F82F237D561ED560 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReplicateFlicks/Pods-ReplicateFlicks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4E3446E9685AA9FD0334571 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReplicateFlicks/Pods-ReplicateFlicks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFBE3C65D4A52FE7BACFCFB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2E4C03C1E4143D60073D05A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E4C0461E4143D60073D05A /* ViewController.swift in Sources */,
 				D2E4C0441E4143D60073D05A /* AppDelegate.swift in Sources */,
+				D2E4C05B1E414BB00073D05A /* MovieCellView.swift in Sources */,
+				D2E4C0561E41449A0073D05A /* MoviesViewController.swift in Sources */,
+				D2E4C0581E4146EB0073D05A /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +357,7 @@
 		};
 		D2E4C0531E4143D60073D05A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4ABC71D16265CB86662CAE /* Pods-ReplicateFlicks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReplicateFlicks/Info.plist;
@@ -270,6 +370,7 @@
 		};
 		D2E4C0541E4143D60073D05A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1386AED96BE7442869E24DB /* Pods-ReplicateFlicks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReplicateFlicks/Info.plist;
@@ -299,6 +400,7 @@
 				D2E4C0541E4143D60073D05A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
