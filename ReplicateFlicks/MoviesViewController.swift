@@ -8,11 +8,12 @@
 
 import UIKit
 import AFNetworking
+import MBProgressHUD
 
 class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var movieTableView: UITableView!
     
-    let baseUrl: String = ""
+    let baseUrl: String = "https://image.tmdb.org/t/p/w500"
     
     var movies: [NSDictionary]?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,16 +32,15 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         cell.title.text = aMovie["title"] as! String
         cell.overview.text = aMovie["overview"] as! String
+        let photoUrl = URL(string: baseUrl + (aMovie["poster_path"] as! String))
+        
+        cell.posterView.setImageWith(photoUrl!)
         
         return cell
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        movieTableView.dataSource = self
-        movieTableView.delegate = self
-        
-        
+    func retrieveInfo(_ refreshControl: UIRefreshControl?){
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -51,10 +51,29 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     print(dataDictionary)
                     self.movies = dataDictionary["results"] as! [NSDictionary]
                     self.movieTableView.reloadData()
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                    
+                    if let refreshControl = refreshControl {
+                        refreshControl.endRefreshing()
+                    }
                 }
             }
         }
         task.resume()
+    }
+    func initializeRefreshControl(){
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(retrieveInfo(_:)), for: UIControlEvents.valueChanged)
+        
+        movieTableView.addSubview(refreshControl)
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        movieTableView.dataSource = self
+        movieTableView.delegate = self
+        
+        retrieveInfo(nil)
+        initializeRefreshControl()
         
         
         
