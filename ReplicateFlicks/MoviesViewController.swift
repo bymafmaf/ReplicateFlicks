@@ -40,6 +40,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func retrieveInfo(_ refreshControl: UIRefreshControl?){
+        
         MBProgressHUD.showAdded(to: self.view, animated: true)
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
