@@ -5,4 +5,5 @@ use_frameworks!
 target 'ReplicateFlicks' do
     pod 'AFNetworking'
 	pod 'MBProgressHUD'
+	pod 'ReachabilitySwift', '~> 3'
 end

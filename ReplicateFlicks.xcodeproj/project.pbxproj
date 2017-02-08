@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D298686D1E4A8D99006FFCE5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298686C1E4A8D99006FFCE5 /* DetailViewController.swift */; };
 		D2E4C0441E4143D60073D05A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C0431E4143D60073D05A /* AppDelegate.swift */; };
 		D2E4C0491E4143D60073D05A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E4C0471E4143D60073D05A /* Main.storyboard */; };
 		D2E4C04B1E4143D60073D05A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E4C04A1E4143D60073D05A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		B1386AED96BE7442869E24DB /* Pods-ReplicateFlicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplicateFlicks.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReplicateFlicks/Pods-ReplicateFlicks.release.xcconfig"; sourceTree = "<group>"; };
 		B29316AD34068C775203168D /* Pods_ReplicateFlicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReplicateFlicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D298686C1E4A8D99006FFCE5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D2E4C0401E4143D60073D05A /* ReplicateFlicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplicateFlicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E4C0431E4143D60073D05A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2E4C0481E4143D60073D05A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				D2E4C0551E41449A0073D05A /* MoviesViewController.swift */,
+				D298686C1E4A8D99006FFCE5 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				D2E4C0441E4143D60073D05A /* AppDelegate.swift in Sources */,
 				D2E4C05B1E414BB00073D05A /* MovieCellView.swift in Sources */,
 				D2E4C0561E41449A0073D05A /* MoviesViewController.swift in Sources */,
+				D298686D1E4A8D99006FFCE5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
