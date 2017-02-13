@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: BaseViewController {
 
     @IBOutlet weak var imagePoster: UIImageView!
     
@@ -24,6 +24,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         
         titleLabel.text = movieInfo!["title"] as! String
         detailLabel.text = movieInfo!["overview"] as! String

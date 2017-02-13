@@ -6,4 +6,5 @@ target 'ReplicateFlicks' do
     pod 'AFNetworking'
 	pod 'MBProgressHUD'
 	pod 'ReachabilitySwift', '~> 3'
+	pod 'UIColor_Hex_Swift', '~> 3.0.2'
 end

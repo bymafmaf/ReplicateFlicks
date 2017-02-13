@@ -16,17 +16,20 @@ PODS:
     - AFNetworking/NSURLSession
   - MBProgressHUD (1.0.0)
   - ReachabilitySwift (3)
+  - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
   - AFNetworking
   - MBProgressHUD
   - ReachabilitySwift (~> 3)
+  - UIColor_Hex_Swift (~> 3.0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 5d6b52b1ee07a7aaa42d82e5198d1671d63d761f
+PODFILE CHECKSUM: 089756211aa8f0f8738711eded51c15df1bc8d58
 
 COCOAPODS: 1.2.0

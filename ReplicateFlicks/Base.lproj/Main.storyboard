@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WnT-yk-UKk" id="xYG-9V-6tm">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="123"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yxh-LM-sKq">
@@ -49,6 +49,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.80784313725490198" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="overview" destination="OWN-SE-wtl" id="Xmz-na-CAu"/>
                                             <outlet property="posterView" destination="7n9-ea-v0l" id="UlN-cG-K5k"/>
@@ -125,14 +126,18 @@
             </objects>
             <point key="canvasLocation" x="1088.5" y="133.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="0MM-xc-VLa">
             <objects>
-                <navigationController storyboardIdentifier="MoviesNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nr3-X5-Hvr" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MoviesNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nr3-X5-Hvr" customClass="BaseNavigationController" customModule="ReplicateFlicks" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qnF-mr-327">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.42745098039215684" green="0.54117647058823526" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
